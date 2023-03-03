@@ -1,0 +1,27 @@
+<body>
+  <div id="login">
+    <!-- <h3 class="text-center text-white pt-5">Cognito Login form</h3> -->
+    <div class="container">
+      <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+          <div id="login-box" class="col-md-12">
+            <form id="login-form" class="form">
+              <h3 class="text-center text-info">Dashboard</h3>
+              <div class="mt-5 d-flex justify-content-center">
+
+                <button type="button" class="m-5 btn btn-primary btn-block mb-4"
+                  (click)="refreshToken()">Refresh</button>
+                <button type="button" class="m-5 btn btn-primary btn-block mb-4" (click)="signOut()">Sign Out</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="login1">
+    <div class="container ">
+      <p class="text-break">{{frontendRefreshToken}}</p>
+    </div>
+  </div>
+</body>

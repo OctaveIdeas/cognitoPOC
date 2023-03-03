@@ -1,0 +1,55 @@
+<!-- <div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-8">
+      <form [formGroup]="form">
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form2Example1">User Name</label>
+          <input type="text" id="form2Example1" class="form-control" formControlName="username" />
+        </div>
+
+
+        <div class="form-outline mb-4">
+          <label class="form-label" for="form2Example2">Password</label>
+          <input type="password" id="form2Example2" class="form-control" formControlName="password" />
+        </div>
+
+        <button type="button" class="btn btn-primary btn-block mb-4" (click)="onSubmit()">Sign in</button>
+
+      </form>
+    </div>
+  </div>
+</div> -->
+
+<body>
+  <div id="login">
+    <h3 class="text-center text-white pt-5">Cognito Login form</h3>
+    <div class="container">
+      <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+          <div id="login-box" class="col-md-12">
+            <form id="login-form" class="form" [formGroup]="form">
+              <h3 class="text-center text-info">Login</h3>
+              <div class="form-group">
+                <label class="form-label" for="username">User Name</label>
+                <input type="text" id="username" class="form-control" formControlName="username" />
+                <small *ngIf="form.controls['username'].invalid && isSubmitted===true" class="p-error">User Name is
+                  required</small>
+              </div>
+              <div class="form-group">
+                <br><label class="form-label" for="password">Password</label>
+                <input type="password" id="password" class="form-control" formControlName="password" />
+                <small *ngIf="form.controls['password'].invalid && isSubmitted===true" class="p-error">Password is
+                  required</small>
+              </div>
+              <div class="form-group">
+                <br> <button type="button" class="btn btn-primary btn-block mb-4" (click)="onSubmit()">Sign in</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
