@@ -8,7 +8,7 @@ import { map } from 'rxjs';
 })
 export class PostService {
 
-  readonly URL: string = 'https://qgmaj608kb.execute-api.us-east-1.amazonaws.com/lambda'
+  readonly URL: string = 'https://xxxxxxxx.execute-api.us-east-1.amazonaws.com/lambda'
 
   constructor(private http: HttpClient) { }
 
