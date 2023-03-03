@@ -29,18 +29,6 @@ export class LoginComponent implements OnInit {
   onSubmit() {
     this.isSubmitted = true;
 
-    /*
-    Sample Login Object
-    {
-      "actionType": "initiate_auth",
-      "ClientId": "4qlcnjgiv690c6m6a3i1do15mr",
-      "Username": "rshakeel@octavebytes.com",
-      "Password": "#Abc1234"
-    }
-    */
-
-    // this.router.navigateByUrl("/dashboard")
-
     const loginRequest = {
       "actionType": "initiate_auth",
       "ClientId": "4qlcnjgiv690c6m6a3i1do15mr",
